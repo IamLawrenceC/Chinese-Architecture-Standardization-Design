@@ -1,0 +1,17 @@
+x= input("輸入平方呎數:")
+print("")
+x =float(x)
+y = (x/6.72744)**0.5
+const = 10.7639104
+#一間算法
+print("以下是一間算法:")
+print("面闊",round(y,2),"米")
+print("進深",round(y*0.625,2),"米")
+print("面積",round(round(y,2)*round(y*0.625,2)*const,2),"平方呎")
+#三間算法
+print("以下是三間算法:")
+print("通面闊",round(round(y,2)+round(y*0.8*2,2),2),"米")
+a= round(round(y,2)+round(y*0.8*2,2),2)
+b= round((round(y,2)+round(y*0.8*2,2))*0.625,2) 
+print("通進深",b,"米")
+print("面積",round(a*b*const,2),"平方呎")
